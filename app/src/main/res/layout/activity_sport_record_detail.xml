@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <com.hihonor.healthkitdemo.view.CardRoundView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:id="@+id/ll_sport_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sport_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.24"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sport_distance_unit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:text="公里"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sport_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="户外跑步"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_sport_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_sport_title"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sport_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022-11-19 22:00"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="6dp"
+                    android:text="~"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/sport_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022-11-20 06:00"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sport_summay_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_sport_period"
+                android:layout_marginTop="6dp" />
+
+        </com.hihonor.healthkitdemo.view.CardRoundView>
+
+        <com.hihonor.healthkitdemo.view.CardRoundView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/sport_detail_heartrate_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sport_detail_segment_heartrate"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sport_detail_heartrate_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sport_detail_heartrate_title"
+                android:layout_marginTop="6dp"/>
+
+        </com.hihonor.healthkitdemo.view.CardRoundView>
+
+        <com.hihonor.healthkitdemo.view.CardRoundView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/sport_detail_steprate_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sport_detail_segment_steprate"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sport_detail_steprate_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sport_detail_steprate_title"
+                android:layout_marginTop="6dp"/>
+
+        </com.hihonor.healthkitdemo.view.CardRoundView>
+
+        <com.hihonor.healthkitdemo.view.CardRoundView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/sport_detail_speed_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sport_detail_segment_speed"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sport_detail_speed_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sport_detail_speed_title"
+                android:layout_marginTop="6dp"/>
+
+        </com.hihonor.healthkitdemo.view.CardRoundView>
+
+        <com.hihonor.healthkitdemo.view.CardRoundView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/sport_detail_location_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sport_detail_segment_location"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sport_detail_location_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sport_detail_location_title"
+                android:layout_marginTop="6dp"/>
+
+        </com.hihonor.healthkitdemo.view.CardRoundView>
+
+    </LinearLayout>
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/sport_type"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="24sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/sport_segment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:lineSpacingExtra="2dp"-->
+<!--            android:singleLine="false"-->
+<!--            android:textSize="18sp" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/sport_detail_segment"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/sport_detail_list"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp" />-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+</androidx.core.widget.NestedScrollView>

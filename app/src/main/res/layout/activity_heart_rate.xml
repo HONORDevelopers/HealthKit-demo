@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="32dp">
+
+    <Button
+        android:id="@+id/btn_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:text="@string/start_heart_monitor"
+        android:textColor="@color/btn_text_color_real_time"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <include
+        layout="@layout/layout_rate_step"
+        android:id="@+id/ll_heart_rate_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_controller"
+        />
+
+    <Button
+        android:id="@+id/btn_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:text="@string/start_step_monitor"
+        android:textColor="@color/btn_text_color_real_time"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_heart_rate_data"></Button>
+
+    <include
+        layout="@layout/layout_rate_step"
+        android:id="@+id/include_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_step"
+        />
+
+    <Button
+        android:id="@+id/btn_heart_rate_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:text="@string/start_heart_rate_step_monitor"
+        android:textColor="@color/btn_text_color_real_time"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/include_step"></Button>
+
+    <include
+        layout="@layout/layout_rate_step"
+        android:id="@+id/include_rate_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_heart_rate_step"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+rootProject.name = "healthkitdevdemo"
+include ':app'

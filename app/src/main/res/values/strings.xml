@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">HealthKitDev</string>
+
+    <string name="data_loading">数据加载中...</string>
+    <string name="none_data">没有数据</string>
+    <string name="none_error">获取数据失败</string>
+
+    <string name="sleep_detail_info">睡眠详情信息:</string>
+    <string name="item_date">日期:</string>
+    <string name="total_sleep_time">睡眠总时长:</string>
+    <string name="item_sleep_time">睡眠时长:</string>
+    <string name="item_in_sleep_time">入睡时间:</string>
+    <string name="item_out_sleep_time">出睡时间:</string>
+    <string name="deep_sleep">深睡总时长:</string>
+    <string name="light_sleep">浅睡总时长:</string>
+    <string name="rem_sleep">快速眼动总时长:</string>
+    <string name="wide_awake">清醒总时长:</string>
+    <string name="awake_times">清醒次数:</string>
+    <string name="sleep_type">模式:</string>
+    <string name="night_sleep_time">夜间睡眠:</string>
+    <string name="sporadic_naps">零星小睡:</string>
+    <string name="sleep_quality">睡眠质量:</string>
+    <string name="respiratory_quality">呼吸质量rdi:</string>
+    <string name="deep_sleep_continue">深睡连续性指数:</string>
+    <string name="night_segment">夜间睡眠详情</string>
+    <string name="nap_segment">零星小睡详情</string>
+
+    <string name="start_time">开始时间:</string>
+    <string name="end_time">结束时间:</string>
+    <string name="sleep_status">状态:</string>
+    <string name="duration">持续时间:</string>
+
+    <string name="start_heart_monitor">启动心率实时监测</string>
+    <string name="stop_heart_monitor">关闭心率实时监测</string>
+    <string name="start_step_monitor">启动步数实时监测</string>
+    <string name="stop_step_monitor">关闭步数实时监测</string>
+    <string name="start_heart_rate_step_monitor">启动心率和步数实时监测</string>
+    <string name="stop_heart_rate_step_monitor">关闭心率和步数实时监测</string>
+    <string name="real_time_heart_rate_title">动态心率</string>
+    <string name="real_time_step_title">动态步数</string>
+    <string name="real_time_heart_rate_and_step_title">动态心率和步数</string>
+    <string name="real_time_heart_rate_unit">次/分钟</string>
+    <string name="real_time_step_unit">步</string>
+
+    <string name="subscribe_start_date">启动订阅数据</string>
+    <string name="subscribe_stop_date">关闭订阅数据</string>
+    <string name="subscribe_type_target">目标订阅</string>
+    <string name="subscribe_type_cycle">周期订阅</string>
+    <string name="subscribe_date_step">步数(步)</string>
+    <string name="subscribe_date_distance">距离（米）</string>
+    <string name="subscribe_date_calorie">热量（千卡）</string>
+
+    <string name="seven_day_item_date">日期</string>
+    <string name="seven_day_item_step">步数\n（步）</string>
+    <string name="seven_day_item_calorie">热量\n（千卡）</string>
+    <string name="seven_day_item_distance">距离\n（米）</string>
+    
+    <string name="sport_walk">步行</string>
+    <string name="sport_running_outdoor">户外跑步</string>
+    <string name="sport_running_indoor">室内跑步</string>
+    <string name="sport_riding">骑行</string>
+    <string name="sport_running">跑步</string>
+    <string name="sport_training">训练</string>
+    <string name="sport_fitness_exercise">健身</string>
+    <string name="sport_yoga">瑜伽</string>
+    <string name="sport_climb">爬高</string>
+    <string name="sport_jump_rope">跳绳</string>
+    <string name="sport_natation">游泳</string>
+    <string name="sport_other">其他</string>
+
+    <string name="sport_distance_kilometer">公里</string>
+    <string name="sport_jump_unit">个</string>
+
+    <string name="sport_detail_segment">详情</string>
+    <string name="sport_detail_segment_heartrate">心率详情</string>
+    <string name="sport_detail_segment_steprate">步频详情</string>
+    <string name="sport_detail_segment_speed">速度详情</string>
+    <string name="sport_detail_segment_location">位置详情</string>
+
+    <string name="sport_item_distance">运动距离/米:</string>
+    <string name="sport_item_sport_time">运动总时长:</string>
+    <string name="sport_item_calorie">消耗总热量:</string>
+    <string name="sport_item_sport_speed">平均速度:</string>
+    <string name="sport_item_step_cadence">平均步频:</string>
+    <string name="sport_item_sport_steps">运动步数:</string>
+    <string name="sport_item_sport_avg_heart_rate">平均心率:</string>
+    <string name="sport_item_total_rise_height">累计爬升高度:</string>
+    <string name="sport_item_total_drop_height">累计下降高度:</string>
+
+    <string name="sport_item_tripped">中断次数:</string>
+    <string name="sport_item_longest_streak">最多连跳次数:</string>
+
+    <string name="sport_item_dynamic_heart_rate">动态心率/(次/分钟):</string>
+    <string name="sport_item_resting_heart_rate">静息心率/(次/分钟):</string>
+    <string name="sport_item_latitude">纬度:</string>
+    <string name="sport_item_longitude">经度:</string>
+    <string name="sport_item_precision">精度/米:</string>
+    <string name="sport_item_gpsTra">GPS点类型:</string>
+
+    <string name="time_format_hour">小时</string>
+    <string name="time_format_minute">分钟</string>
+    <string name="time_format_second">秒</string>
+
+    <string name="unit_minutes">分钟</string>
+    <string name="unit_times">次数</string>
+    <string name="unit_score">分</string>
+    <string name="unit_calorie">千卡</string>
+    <string name="unit_speed_m">米/秒</string>
+    <string name="unit_speed_km">公里/小时</string>
+    <string name="unit_step_cadence">步/分钟</string>
+    <string name="unit_step">步</string>
+    <string name="unit_heart_rate">次/分钟</string>
+    <string name="unit_distance_m">米</string>
+    <string name="unit_distance_km">公里</string>
+</resources>

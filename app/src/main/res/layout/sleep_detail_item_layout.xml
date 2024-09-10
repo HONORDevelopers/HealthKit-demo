@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_sleep_summay_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_sleep_summay_title"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_sleep_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022-11-19 22:00"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_sleep_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022-11-20 06:00"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_sleep_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="快速眼动"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_sleep_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="100"
+        android:textSize="12sp" />
+</LinearLayout>

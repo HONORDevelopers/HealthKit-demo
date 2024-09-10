@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <com.hihonor.healthkitdemo.view.CardRoundView
+        android:id="@+id/layout_target_or_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="目标订阅或周期订阅"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/include_target_or_cycle"
+            layout="@layout/layout_radio_group_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+    </com.hihonor.healthkitdemo.view.CardRoundView>
+
+    <com.hihonor.healthkitdemo.view.CardRoundView
+        android:id="@+id/layout_date_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/layout_target_or_cycle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订阅数据类型"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/include_date_type"
+            layout="@layout/layout_radio_group_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+    </com.hihonor.healthkitdemo.view.CardRoundView>
+
+    <com.hihonor.healthkitdemo.view.CardRoundView
+        android:id="@+id/layout_three_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/layout_date_type">
+
+        <LinearLayout
+            android:id="@+id/layout_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/layout_date_type">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="周期目标"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/include_date_value"
+                layout="@layout/layout_radio_group_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/layout_date_type">
+
+            <EditText
+                android:id="@+id/edit_target_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:hint="请输入订阅目标值"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.hihonor.healthkitdemo.view.CardRoundView>
+
+    <Button
+        android:id="@+id/btn_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_bg"
+        android:text="@string/subscribe_start_date"
+        android:textColor="@color/btn_text_color_real_time"
+        app:layout_constraintTop_toBottomOf="@+id/layout_three_line"></Button>
+
+    <com.hihonor.healthkitdemo.view.CardRoundView
+        android:id="@+id/ll_subscribe_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/btn_subscribe">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_subscribe_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周期订阅"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_subscribe_type_and_aim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步数：500"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_subscribe_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/text_size_50"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_result_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/real_time_step_unit"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.hihonor.healthkitdemo.view.CardRoundView>
+</androidx.constraintlayout.widget.ConstraintLayout>
